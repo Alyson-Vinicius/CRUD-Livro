@@ -1,4 +1,7 @@
-<?php
+<body>
+    
+    
+    <?php
 require 'db.php';
 
 $sql = 'SELECT * FROM livros';
@@ -28,5 +31,11 @@ $livros = $stmt->fetchAll();
                 <a href="delete.php?id=<?= $livro['id'] ?>" onclick="return confirm('Tem certeza que deseja excluir este livro?')">Excluir</a>
             </td>
         </tr>
-    <?php endforeach; ?>
-</table>
+        <?php endforeach; ?>
+    </table>
+    
+
+
+    <script src="js/scripts.js"></script>
+
+</body>

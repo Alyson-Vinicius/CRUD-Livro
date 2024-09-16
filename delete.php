@@ -1,4 +1,7 @@
-<?php
+<body>
+    
+    
+    <?php
 require 'db.php';
 
 $id = $_GET['id'];
@@ -9,3 +12,8 @@ $stmt->execute([$id]);
 
 header('Location: index.php');
 ?>
+
+
+<script src="js/scripts.js"></script>
+
+</body>

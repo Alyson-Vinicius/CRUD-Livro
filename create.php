@@ -1,4 +1,7 @@
-<?php
+<body>
+    
+    
+    <?php
 require 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -6,11 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $autor = $_POST['autor'];
     $ano_publicacao = $_POST['ano_publicacao'];
     $genero = $_POST['genero'];
-
+    
     $sql = "INSERT INTO livros (titulo, autor, ano_publicacao, genero) VALUES (?, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$titulo, $autor, $ano_publicacao, $genero]);
-
+    
     header('Location: index.php');
 }
 ?>
@@ -22,3 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="text" name="genero" placeholder="Gênero">
     <button type="submit">Adicionar Livro</button>
 </form>
+
+
+<script src="js/scripts.js"></script>
+
+
+</body>

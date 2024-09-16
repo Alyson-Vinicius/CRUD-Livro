@@ -1,4 +1,6 @@
-<?php
+<body>
+    
+    <?php
 $host = 'localhost';
 $db = 'crud_livro';
 $user = 'root'; // Seu usuário MySQL
@@ -18,3 +20,10 @@ try {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 ?>
+
+
+
+
+<script src="js/scripts.js"></script>
+
+</body>
