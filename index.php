@@ -7,7 +7,7 @@ $livros = $stmt->fetchAll();
 ?>
 
 <a href="create.php">Adicionar Novo Livro</a>
-<table border="1">
+<table border = "1">
     <tr>
         <th>ID</th>
         <th>Título</th>
