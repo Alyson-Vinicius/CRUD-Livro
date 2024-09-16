@@ -1,7 +1,7 @@
 <body>
     
     <?php
-$host = 'localhost';
+$host = 'localhost:3007';
 $db = 'crud_livro';
 $user = 'root'; // Seu usuário MySQL
 $pass = '';     // Sua senha MySQL
