@@ -1,11 +1,11 @@
 <body>
     
     <?php
-$host = 'localhost:3007';
+$host = 'localhost:';
 $db = 'crud_livro';
-$user = 'root'; // Seu usuário MySQL
-$pass = '';     // Sua senha MySQL
-$charset = 'utf8mb4';
+$user = 'root';
+$pass = '';     
+$port = '3307';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
